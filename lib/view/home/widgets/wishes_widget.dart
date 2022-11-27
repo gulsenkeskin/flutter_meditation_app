@@ -21,7 +21,7 @@ class WishesWidget extends StatelessWidget {
             fontSize: context.dynamicFFem(20),
             fontWeight: subTitleWeight,
             height: context.welcomeTitleHeight,
-            color: subTitleColor),
+            color: subTitleColorGrey),
       ),
     );
   }

@@ -23,7 +23,7 @@ class WelcomeWidget extends StatelessWidget {
           fontSize: context.dynamicFFem(28),
           fontWeight: titleWeight,
           height: context.welcomeTitleHeight,
-          color: titleColor,
+          color: titleColorDark,
         ),
       ),
     );
