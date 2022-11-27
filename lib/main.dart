@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meditation_app/view/home.dart';
+import 'package:flutter_meditation_app/view/home/home_view.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
 
 void main() {
