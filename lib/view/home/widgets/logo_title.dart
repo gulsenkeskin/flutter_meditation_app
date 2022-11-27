@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
@@ -49,7 +50,7 @@ class LogoTitle extends StatelessWidget {
       child: Text(
         title,
         style: SafeGoogleFont(
-          'Airbnb Cereal App',
+          GoogleFont.airbnbCerealApp.toString(),
           fontSize: context.titleFontSize,
           fontWeight: FontWeight.w700,
           height: context.titleHeight,
