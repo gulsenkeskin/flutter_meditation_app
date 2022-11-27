@@ -30,6 +30,8 @@ extension MediaQueryExtension on BuildContext {
   double get titleHeight=> dynamicFFem(1.2575) / fem;
   double get titleLetterSpacing=> dynamicFem(3.84);
 
+  double get welcomeTitleHeight=> dynamicFFem( 1.0809999875)/fem;
+
 
 
   // double get lowValue => height * 0.01;
