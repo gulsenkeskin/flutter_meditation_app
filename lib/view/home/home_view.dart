@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/view/home/text_constants.dart';
 import 'package:flutter_meditation_app/view/home/widgets/logo_title.dart';
 import 'package:flutter_meditation_app/view/home/widgets/welcome_widget.dart';
+import 'package:flutter_meditation_app/view/home/widgets/wishes_widget.dart';
+
+import '../../constants/font/font_color.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -21,14 +25,18 @@ class HomeView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(
-                    context.dynamicFem(20), context.dynamicFem(50), 0, 0),
+                padding: EdgeInsets.only(
+                    left: context.dynamicFem(20), top: context.dynamicFem(50)),
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    logoTitleWrapper(),
-                    WelcomeWidget()
+                  children: const [
+                    LogoTitle(logoPath: logoPath, titleColor: titleColor),
+                    WelcomeWidget(
+                      welcomeText: welcomeText,
+                      userName: userName,
+                    ),
+                    WishesWidget(wish: wish),
                   ],
                 ),
               )
@@ -37,12 +45,5 @@ class HomeView extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  LogoTitle logoTitleWrapper() {
-    const Color titleColor = Color(0xff3f414e);
-    const String logoPath = "logo-dJa";
-
-    return const LogoTitle(logoPath: logoPath, titleColor: titleColor);
   }
 }
