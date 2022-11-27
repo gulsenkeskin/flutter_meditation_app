@@ -7,15 +7,16 @@ import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dar
 class LogoTitle extends StatelessWidget {
   final String logoPath;
   final Color titleColor;
-  const LogoTitle({Key? key, required this.logoPath, required this.titleColor}) : super(key: key);
+  const LogoTitle({Key? key, required this.logoPath, required this.titleColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     const String title1 = "Slient";
-    EdgeInsets margin1 =
-        EdgeInsets.fromLTRB(0, context.dynamicFem(1), context.dynamicFem(8), 0);
+    EdgeInsets margin1 = EdgeInsets.only(
+        top: context.dynamicFem(1), right: context.dynamicFem(8));
 
-    EdgeInsets margin2 = EdgeInsets.fromLTRB(0, context.dynamicFem(1), 0, 0);
+    EdgeInsets margin2 = EdgeInsets.only(top: context.dynamicFem(1));
 
     const String title2 = "Moon";
     return Container(
@@ -25,26 +26,25 @@ class LogoTitle extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          title(context, title1, margin1,titleColor),
-          logo(context,logoPath),
-          title(context, title2, margin2,titleColor),
+          title(context, title1, margin1, titleColor),
+          logo(context, logoPath),
+          title(context, title2, margin2, titleColor),
         ],
       ),
     );
   }
 
   Container logo(BuildContext context, String logoPath) {
-
     return Container(
-      margin: EdgeInsets.fromLTRB(0, 0, context.dynamicFem(10), 0),
+      margin: EdgeInsets.only(right: context.dynamicFem(10)),
       width: context.fem30,
       height: context.fem30,
       child: logoPath.toImageAsset(height: context.fem30, width: context.fem30),
     );
   }
 
-  Container title(
-      BuildContext context, String title, EdgeInsetsGeometry margin, Color titleColor) {
+  Container title(BuildContext context, String title, EdgeInsetsGeometry margin,
+      Color titleColor) {
     return Container(
       margin: margin,
       child: Text(
