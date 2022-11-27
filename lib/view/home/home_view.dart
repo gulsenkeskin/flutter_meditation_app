@@ -4,6 +4,7 @@ import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/view/home/text_constants.dart';
 import 'package:flutter_meditation_app/view/home/widgets/center_cards.dart';
 import 'package:flutter_meditation_app/view/home/widgets/logo_title.dart';
+import 'package:flutter_meditation_app/view/home/widgets/play_card.dart';
 import 'package:flutter_meditation_app/view/home/widgets/welcome_widget.dart';
 import 'package:flutter_meditation_app/view/home/widgets/wishes_widget.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
@@ -38,6 +39,7 @@ class HomeView extends StatelessWidget {
                     ),
                     WishesWidget(wish: wish),
                     CenterCards(),
+                    PlayCard(),
 
                   ],
                 ),
