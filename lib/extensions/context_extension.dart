@@ -20,17 +20,29 @@ extension MediaQueryExtension on BuildContext {
   double get fem => width / baseWidth;
   double get ffem => fem * 0.97;
 
+  double get fem3 => fem * 3;
+  double get fem5 => fem * 5;
+  double get fem9 => fem * 9;
   double get fem10 => fem * 10;
+  double get fem11 => fem * 11;
+  double get fem12 => fem * 12;
   double get fem15 => fem * 15;
   double get fem20 => fem * 20;
   double get fem25 => fem * 25;
+  double get fem27 => fem * 27;
   double get fem30 => fem * 30;
   double get fem32 => fem * 32;
   double get fem35 => fem * 35;
+  double get fem40 => fem * 40;
   double get fem70 => fem * 70;
   double get fem85 => fem * 85;
+  double get fem95 => fem * 85;
   double get fem177 => fem * 177;
   double get fem210 => fem * 210;
+
+
+
+
 
   double get ffem11 => ffem * 11;
   double get ffem12 => ffem * 12;
@@ -41,6 +53,9 @@ extension MediaQueryExtension on BuildContext {
   double get titleLetterSpacing => dynamicFem(3.84);
 
   double get welcomeTitleHeight => dynamicFFem(1.0809999875) / fem;
+  double get minTitleHeight => dynamicFFem(1.0810000102) / fem;
+  double get minSubTitleHeight => dynamicFFem(1.0809999813) / fem;
+  double get minSubTitleLetterSpacing => dynamicFem(0.55);
 
   // double get lowValue => height * 0.01;
   // double get normalValue => height * 0.02;
