@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/view/home/widgets/logo_title.dart';
+import 'package:flutter_meditation_app/view/home/widgets/welcome_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -27,6 +28,7 @@ class HomeView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     logoTitleWrapper(),
+                    WelcomeWidget()
                   ],
                 ),
               )

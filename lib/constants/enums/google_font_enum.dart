@@ -1,11 +1,18 @@
-import 'package:json_annotation/json_annotation.dart';
 
-@JsonEnum()
-enum GoogleFont{
-  @JsonValue('HelveticaNeue')
+enum GoogleFontEnum{
   helveticaNeue,
-  @JsonValue('Airbnb Cereal App')
   airbnbCerealApp,
+}
 
-
+extension GoogleFontEnumExtension on GoogleFontEnum {
+  String get font {
+    switch (this) {
+      case GoogleFontEnum.helveticaNeue:
+        return 'HelveticaNeue';
+      case GoogleFontEnum.airbnbCerealApp:
+        return 'Airbnb Cereal App';
+      default:
+        return 'Airbnb Cereal App';
+    }
+  }
 }

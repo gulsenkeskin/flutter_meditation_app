@@ -50,7 +50,7 @@ class LogoTitle extends StatelessWidget {
       child: Text(
         title,
         style: SafeGoogleFont(
-          GoogleFont.airbnbCerealApp.toString(),
+          GoogleFontEnum.airbnbCerealApp.font,
           fontSize: context.titleFontSize,
           fontWeight: FontWeight.w700,
           height: context.titleHeight,
