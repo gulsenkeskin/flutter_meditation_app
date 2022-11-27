@@ -4,7 +4,9 @@ import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
 
 class LogoTitle extends StatelessWidget {
-  const LogoTitle({Key? key}) : super(key: key);
+  final String logoPath;
+  final Color titleColor;
+  const LogoTitle({Key? key, required this.logoPath, required this.titleColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +24,15 @@ class LogoTitle extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          title(context, title1, margin1),
-          logo(context),
-          title(context, title2, margin2),
+          title(context, title1, margin1,titleColor),
+          logo(context,logoPath),
+          title(context, title2, margin2,titleColor),
         ],
       ),
     );
   }
 
-  Container logo(BuildContext context) {
-    const String logoPath = "logo-dJa";
+  Container logo(BuildContext context, String logoPath) {
 
     return Container(
       margin: EdgeInsets.fromLTRB(0, 0, context.dynamicFem(10), 0),
@@ -42,8 +43,7 @@ class LogoTitle extends StatelessWidget {
   }
 
   Container title(
-      BuildContext context, String title, EdgeInsetsGeometry margin) {
-    const Color titleColor = Color(0xff3f414e);
+      BuildContext context, String title, EdgeInsetsGeometry margin, Color titleColor) {
     return Container(
       margin: margin,
       child: Text(

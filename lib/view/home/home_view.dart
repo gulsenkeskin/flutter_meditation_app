@@ -25,8 +25,8 @@ class HomeView extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    LogoTitle(),
+                  children: [
+                    logoTitleWrapper(),
                   ],
                 ),
               )
@@ -35,5 +35,12 @@ class HomeView extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  LogoTitle logoTitleWrapper() {
+    const Color titleColor = Color(0xff3f414e);
+    const String logoPath = "logo-dJa";
+
+    return const LogoTitle(logoPath: logoPath, titleColor: titleColor);
   }
 }
