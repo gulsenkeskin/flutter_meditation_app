@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 enum ImagePaths {
 // ignore: constant_identifier_names
-  auto_group_2uke,
-  2,
 
 }
 
