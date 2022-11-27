@@ -13,4 +13,10 @@ extension ImagePathsExtension on String{
       width: width,
     );
   }
+
+  AssetImage assetImage() {
+    return AssetImage(
+      path(),
+    );
+  }
 }
