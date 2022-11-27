@@ -25,6 +25,13 @@ extension MediaQueryExtension on BuildContext {
 
 
   double get fem30 => fem * 30;
+
+  double get titleFontSize=> dynamicFFem(16);
+  double get titleHeight=> dynamicFFem(1.2575) / fem;
+  double get titleLetterSpacing=> dynamicFem(3.84);
+
+
+
   // double get lowValue => height * 0.01;
   // double get normalValue => height * 0.02;
   // double get mediumValue => height * 0.04;
@@ -37,3 +44,5 @@ extension MediaQueryExtension on BuildContext {
   double dynamicHeight(double val) => height * val;
 
 }
+
+

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/view/home/widgets/logo_title.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -24,8 +25,8 @@ class HomeView extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-
+                  children: const [
+                    LogoTitle(),
                   ],
                 ),
               )

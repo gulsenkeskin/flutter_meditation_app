@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
 
 class LogoTitle extends StatelessWidget {
@@ -7,6 +8,12 @@ class LogoTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const String title1 = "Slient";
+    EdgeInsets margin1 =
+        EdgeInsets.fromLTRB(0, context.dynamicFem(1), context.dynamicFem(8), 0);
+
+    EdgeInsets margin2 = EdgeInsets.fromLTRB(0, context.dynamicFem(1), 0, 0);
+
     const String title2 = "Moon";
     return Container(
       margin: EdgeInsets.fromLTRB(context.dynamicFem(103), 0,
@@ -14,30 +21,39 @@ class LogoTitle extends StatelessWidget {
       width: double.infinity,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [slientTitle(context), Container(
-          margin: EdgeInsets.fromLTRB(0, 0, context.dynamicFem(10), 0),
-          width: context.fem30,
-          height: context.fem30,
-          child: Image.network(),
-        )],
+        children: [
+          title(context, title1, margin1),
+          logo(context),
+          title(context, title2, margin2),
+        ],
       ),
     );
   }
 
-  Container slientTitle(BuildContext context) {
-    const String title1 = "Slient";
+  Container logo(BuildContext context) {
+    const String logoPath = "logo-dJa";
+
+    return Container(
+      margin: EdgeInsets.fromLTRB(0, 0, context.dynamicFem(10), 0),
+      width: context.fem30,
+      height: context.fem30,
+      child: logoPath.toImageAsset(height: context.fem30, width: context.fem30),
+    );
+  }
+
+  Container title(
+      BuildContext context, String title, EdgeInsetsGeometry margin) {
     const Color titleColor = Color(0xff3f414e);
     return Container(
-      margin: EdgeInsets.fromLTRB(
-          0, context.dynamicFem(1), context.dynamicFem(8), 0),
+      margin: margin,
       child: Text(
-        title1,
+        title,
         style: SafeGoogleFont(
           'Airbnb Cereal App',
-          fontSize: context.dynamicFFem(16),
+          fontSize: context.titleFontSize,
           fontWeight: FontWeight.w700,
-          height: context.dynamicFFem(1.2575) / context.fem,
-          letterSpacing: context.dynamicFem(3.84),
+          height: context.titleHeight,
+          letterSpacing: context.titleLetterSpacing,
           color: titleColor,
         ),
       ),

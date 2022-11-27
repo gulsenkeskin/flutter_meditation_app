@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
-enum ImagePaths {
-// ignore: constant_identifier_names
 
-}
-
-extension ImagePathsExtension on ImagePaths {
+extension ImagePathsExtension on String{
   String path() {
-    return 'assets/images/$name.png';
+    return 'assets/images/$this.png';
   }
 
-  Widget toWidget({double height = 24,double width = 24}) {
+  Widget toImageAsset({double height = 24,double width = 24}) {
     return Image.asset(
       path(),
       height: height,
