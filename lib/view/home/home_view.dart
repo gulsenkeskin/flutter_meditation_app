@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_meditation_app/constants/color_constants.dart';
 
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/view/home/text_constants.dart';
@@ -39,8 +40,16 @@ class HomeView extends StatelessWidget {
                     ),
                     WishesWidget(wish: wish),
                     CenterCards(),
-                    PlayCard(),
-
+                    PlayCard(
+                      playBoxColor: darkPlayBox,
+                      img: playCardImg,
+                      title: playCardTitle,
+                      subTitle: playCardSubTitle,
+                      minuteTitle: playCardMinute,
+                      playImgPath: playCardPlayImgPath,
+                      subTitleColor: subTitleColorLightGrey,
+                      titleColor: titleColorWhite,
+                    ),
                   ],
                 ),
               )
@@ -50,7 +59,4 @@ class HomeView extends StatelessWidget {
       ),
     );
   }
-
-
-
 }

@@ -1,23 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
-import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
 
 class PlayCard extends StatelessWidget {
-  const PlayCard({Key? key}) : super(key: key);
+  final Color playBoxColor;
+  final String img;
+  final String title;
+  final String subTitle;
+  final String minuteTitle;
+  final String playImgPath;
+  final Color subTitleColor;
+  final Color titleColor;
+
+  const PlayCard(
+      {Key? key,
+      required this.playBoxColor,
+      required this.img,
+      required this.title,
+      required this.subTitle,
+      required this.minuteTitle,
+      required this.playImgPath,
+      required this.subTitleColor,
+      required this.titleColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    const String img = "mask-group-A3t";
-    const String title = "Daily Thought";
-    const String subTitle = "MEDITATION";
-    const String minuteTitle = "3-10 MIN";
-    const String playImgPath = "group-6-kNN";
-
     final double subTitleFem = context.dynamicFem(1.5);
 
     final String font = GoogleFontEnum.helveticaNeue.font;
@@ -29,7 +40,7 @@ class PlayCard extends StatelessWidget {
       width: double.infinity,
       height: context.fem95,
       decoration: BoxDecoration(
-          color: darkPlayBox,
+          color: playBoxColor,
           borderRadius: BorderRadius.circular(context.fem10),
           image: DecorationImage(fit: BoxFit.cover, image: img.assetImage())),
       child: Row(
@@ -69,7 +80,7 @@ class PlayCard extends StatelessWidget {
                 fontWeight: minSubTitleWeight,
                 height: context.minSubTitleHeight,
                 letterSpacing: context.minSubTitleLetterSpacing,
-                color: subTitleColorLightGrey),
+                color: subTitleColor),
           ),
           Container(
             padding: EdgeInsets.only(left: context.fem15),
@@ -84,7 +95,7 @@ class PlayCard extends StatelessWidget {
                   height: context.fem3,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(subTitleFem),
-                      color: subTitleColorLightGrey),
+                      color: subTitleColor),
                 ),
                 Text(
                   minuteTitle,
@@ -93,7 +104,7 @@ class PlayCard extends StatelessWidget {
                       fontWeight: minSubTitleWeight,
                       height: context.minSubTitleHeight,
                       letterSpacing: context.minSubTitleLetterSpacing,
-                      color: subTitleColorLightGrey),
+                      color: subTitleColor),
                 )
               ],
             ),
@@ -122,7 +133,7 @@ class PlayCard extends StatelessWidget {
             fontSize: context.ffem18,
             fontWeight: titleWeight,
             height: context.minTitleHeight,
-            color: titleColorWhite),
+            color: titleColor),
       ),
     );
   }
