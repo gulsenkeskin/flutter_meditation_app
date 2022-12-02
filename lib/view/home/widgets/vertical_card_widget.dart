@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
+import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
@@ -89,8 +90,8 @@ class VerticalCardBottom extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.only(top: context.fem, right: context.fem32),
-            child: Text(
-              bottomText,
+            child: LocaleText(
+              value: bottomText,
               style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
                   fontSize: context.ffem11,
                   fontWeight: minSubTitleWeight,
@@ -106,8 +107,8 @@ class VerticalCardBottom extends StatelessWidget {
                 color: btnBgColor,
                 borderRadius: BorderRadius.circular(context.fem25)),
             child: Center(
-              child: Text(
-                btnText,
+              child: LocaleText(
+                value: btnText,
                 style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
                     fontSize: context.ffem12,
                     fontWeight: minSubTitleWeight,
@@ -150,8 +151,8 @@ class VerticalCardCenter extends StatelessWidget {
                 text: title,
                 fontColor: titleColor,
               )),
-          Text(
-            subTitle,
+          LocaleText(
+            value: subTitle,
             style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
                 fontSize: context.dynamicFFem(11),
                 fontWeight: minSubTitleWeight,

@@ -3,6 +3,7 @@ import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
+import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
@@ -61,7 +62,9 @@ class RecomendedWidget extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(
                           left: context.fem3, bottom: context.fem5),
-                      child: const TextFfem18(text: title,),
+                      child: const TextFfem18(
+                        text: title,
+                      ),
                     )
                   ],
                 ),
@@ -76,8 +79,8 @@ class RecomendedWidget extends StatelessWidget {
   Container recomendedTextWidget(BuildContext context, String font) {
     return Container(
       margin: EdgeInsets.only(bottom: context.fem20),
-      child: Text(
-        text,
+      child: LocaleText(
+        value: text,
         style: SafeGoogleFont(
           font,
           fontSize: context.ffem24,

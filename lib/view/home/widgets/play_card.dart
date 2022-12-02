@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
+import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
@@ -74,8 +75,8 @@ class PlayCard extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            subTitle,
+          LocaleText(
+            value: subTitle,
             style: SafeGoogleFont(font,
                 fontSize: context.ffem11,
                 fontWeight: minSubTitleWeight,
@@ -98,8 +99,8 @@ class PlayCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(subTitleFem),
                       color: subTitleColor),
                 ),
-                Text(
-                  minuteTitle,
+                LocaleText(
+                  value: minuteTitle,
                   style: SafeGoogleFont(font,
                       fontSize: context.ffem11,
                       fontWeight: minSubTitleWeight,

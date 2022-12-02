@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 import 'package:flutter_meditation_app/view/home/home_constants.dart';
 import 'package:flutter_meditation_app/view/home/widgets/vertical_card_widget.dart';
 
@@ -28,10 +29,10 @@ class CenterCards extends StatelessWidget {
 
     return VerticalCardWidget(
       imgPath: homeConstants.imgPathVC1,
-      subTitle: homeConstants.subTitleVC1,
-      bottomText: homeConstants.bottomTextVC1,
-      title: homeConstants.titleVC1,
-      btnText: homeConstants.btnTextVC1,
+      subTitle: LocaleKeys.course,
+      bottomText: LocaleKeys.minute,
+      title: LocaleKeys.basics,
+      btnText: LocaleKeys.button_start,
       boxColor: blueBox,
       titleColor: beige,
       subTitleColor: darkBeige,
@@ -46,10 +47,10 @@ class CenterCards extends StatelessWidget {
 
     return VerticalCardWidget(
       imgPath: homeConstants.imgPathVC2,
-      subTitle: homeConstants.subTitleVC2,
-      bottomText: homeConstants.bottomTextVC1,
-      title: homeConstants.titleVC2,
-      btnText: homeConstants.btnTextVC1,
+      subTitle: LocaleKeys.music,
+      bottomText: LocaleKeys.minute,
+      title: LocaleKeys.relaxion,
+      btnText: LocaleKeys.button_start,
       boxColor: beigeBox,
       titleColor: titleColorDark,
       subTitleColor: subTitleColorBlack,

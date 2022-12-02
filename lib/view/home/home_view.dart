@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
+import 'package:flutter_meditation_app/core/extensions/string_extensions.dart';
 
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 import 'package:flutter_meditation_app/view/home/home_constants.dart';
 import 'package:flutter_meditation_app/view/home/widgets/center_cards.dart';
 import 'package:flutter_meditation_app/view/home/widgets/logo_title.dart';
@@ -28,23 +30,23 @@ class HomeView extends StatelessWidget {
             LogoTitle(
                 logoPath: homeConstants.logoPath, titleColor: titleColorDark),
             WelcomeWidget(
-              welcomeText: homeConstants.welcomeText,
-              userName: homeConstants.userName,
+              welcomeText: LocaleKeys.goodMorning.locale,
+              userName: LocaleKeys.gulsen.locale,
             ),
-            WishesWidget(wish: homeConstants.wish),
+            const WishesWidget(wish: LocaleKeys.wish),
             const CenterCards(),
             PlayCard(
               playBoxColor: darkPlayBox,
               img: homeConstants.playCardImg,
-              title: homeConstants.playCardTitle,
-              subTitle: homeConstants.playCardSubTitle,
-              minuteTitle: homeConstants.playCardMinute,
+              title: LocaleKeys.dailyThought,
+              subTitle: LocaleKeys.meditation,
+              minuteTitle: LocaleKeys.minute,
               playImgPath: homeConstants.playCardPlayImgPath,
               subTitleColor: subTitleColorLightGrey,
               titleColor: titleColorWhite,
             ),
-            RecomendedWidget(
-              text: homeConstants.recomendedText,
+            const RecomendedWidget(
+              text: LocaleKeys.recomendedForYou,
             )
           ],
         ),

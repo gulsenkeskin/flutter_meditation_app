@@ -10,8 +10,6 @@
         "music": "Music"
     },
     "gulsen": "Gülsen",
-    "good": "Good",
-    "morning": "Morning",
     "wish": "We Wish you have a good day",
     "basics": "Basics",
     "course": "COURSE",
@@ -25,7 +23,7 @@
     "happines": "Happines",
     "slient": "Slient",
     "moon": "Moon",
-    "happy": "Happy",
+    "happyMorning": "Happy Morning",
     "ease": "Ease the mind into a restful night's sleep with these deep, ambient tones.",
     "fovorits": "24.234 Favorits",
     "listening": "34.234 Listening",
@@ -34,8 +32,7 @@
     "femaleVoice": "FEMALE VOICE",
     "focusAttention": "Focus Attention",
     "bodyScan": "Body Scan",
-    "makingHappiness": "Making Happiness"
-
-
-
+    "makingHappiness": "Making Happiness",
+    "notFound": "Not Found",
+    "goodMorning": "Good Morning"
 }

@@ -10,8 +10,6 @@ abstract class  LocaleKeys {
   static const button_music = 'button.music';
   static const button = 'button';
   static const gulsen = 'gulsen';
-  static const good = 'good';
-  static const morning = 'morning';
   static const wish = 'wish';
   static const basics = 'basics';
   static const course = 'course';
@@ -25,7 +23,7 @@ abstract class  LocaleKeys {
   static const happines = 'happines';
   static const slient = 'slient';
   static const moon = 'moon';
-  static const happy = 'happy';
+  static const happyMorning = 'happyMorning';
   static const ease = 'ease';
   static const fovorits = 'fovorits';
   static const listening = 'listening';
@@ -35,5 +33,7 @@ abstract class  LocaleKeys {
   static const focusAttention = 'focusAttention';
   static const bodyScan = 'bodyScan';
   static const makingHappiness = 'makingHappiness';
+  static const notFound = 'notFound';
+  static const goodMorning = 'goodMorning';
 
 }
