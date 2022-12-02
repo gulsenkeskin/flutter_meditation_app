@@ -30,13 +30,14 @@ extension MediaQueryExtension on BuildContext {
   double get fem20 => fem * 20;
   double get fem25 => fem * 25;
   double get fem27 => fem * 27;
+  double get fem28 => fem * 28;
   double get fem30 => fem * 30;
   double get fem32 => fem * 32;
   double get fem35 => fem * 35;
   double get fem40 => fem * 40;
   double get fem70 => fem * 70;
   double get fem85 => fem * 85;
-  double get fem95 => fem * 85;
+  double get fem95 => fem * 95;
   double get fem161 => fem * 161;
   double get fem177 => fem * 177;
   double get fem210 => fem * 210;

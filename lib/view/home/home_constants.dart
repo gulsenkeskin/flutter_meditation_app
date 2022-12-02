@@ -12,4 +12,6 @@ class HomeConstants {
   final String imgPathVC2 = "mask-group-XAS";
   final String playCardImg = "mask-group-A3t";
   final String playCardPlayImgPath = "group-6-kNN";
+  final String bottomImgPath1="mask-group-PWr";
+  final String bottomImgPath2="auto-group-fbj2";
 }

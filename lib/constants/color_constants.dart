@@ -7,3 +7,4 @@ const lightGray=Color(0xffebeaec);
 const beigeBox=Color(0xffffc97e);
 const darkPlayBox=Color(0xff333242);
 const greenBox=Color(0xffafdbc5);
+const bachimitsuGold=Color(0xfffedda5);
