@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
-import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/widgets/text/text_ffem18.dart';
 
 class VerticalCardWidget extends StatelessWidget {
   final String imgPath;
@@ -28,8 +28,8 @@ class VerticalCardWidget extends StatelessWidget {
     required this.boxColor,
     required this.titleColor,
     required this.subTitleColor,
-    required this.btnBgColor, required this.btnTitleColor,
-
+    required this.btnBgColor,
+    required this.btnTitleColor,
   }) : super(key: key);
 
   @override
@@ -54,7 +54,11 @@ class VerticalCardWidget extends StatelessWidget {
               titleColor: titleColor,
               subTitleColor: subTitleColor),
           VerticalCardBottom(
-              bottomText: bottomText, btnText: btnText, btnBgColor: btnBgColor, btnTitleColor: btnTitleColor,)
+            bottomText: bottomText,
+            btnText: btnText,
+            btnBgColor: btnBgColor,
+            btnTitleColor: btnTitleColor,
+          )
         ],
       ),
     );
@@ -66,7 +70,8 @@ class VerticalCardBottom extends StatelessWidget {
     super.key,
     required this.bottomText,
     required this.btnText,
-    required this.btnBgColor, required this.btnTitleColor,
+    required this.btnBgColor,
+    required this.btnTitleColor,
   });
 
   final String bottomText;
@@ -76,7 +81,7 @@ class VerticalCardBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: context.fem35,
       child: Row(
@@ -140,18 +145,11 @@ class VerticalCardCenter extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.only(bottom: context.dynamicFem(7.68)),
-            child: Text(
-              title,
-              style: SafeGoogleFont(
-                GoogleFontEnum.helveticaNeue.font,
-                fontSize: context.ffem18,
-                fontWeight: titleWeight,
-                height: context.minTitleHeight,
-                color: titleColor,
-              ),
-            ),
-          ),
+              margin: EdgeInsets.only(bottom: context.dynamicFem(7.68)),
+              child: TextFfem18(
+                text: title,
+                fontColor: titleColor,
+              )),
           Text(
             subTitle,
             style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
