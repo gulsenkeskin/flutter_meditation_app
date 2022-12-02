@@ -24,7 +24,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(
-            left: context.dynamicFem(20), top: context.dynamicFem(50)),
+            left: context.fem20, top: context.fem50),
         width: double.infinity,
         child: ListView(
           scrollDirection: Axis.vertical,
