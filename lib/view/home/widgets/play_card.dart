@@ -4,6 +4,7 @@ import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/widgets/text/text_ffem18.dart';
 
 class PlayCard extends StatelessWidget {
   final Color playBoxColor;
@@ -127,14 +128,7 @@ class PlayCard extends StatelessWidget {
   Container titleWidget(BuildContext context, String title, String font) {
     return Container(
       margin: EdgeInsets.only(bottom: context.fem9),
-      child: Text(
-        title,
-        style: SafeGoogleFont(font,
-            fontSize: context.ffem18,
-            fontWeight: titleWeight,
-            height: context.minTitleHeight,
-            color: titleColor),
-      ),
+      child: TextFfem18(text: title, fontColor: titleColor),
     );
   }
 }
