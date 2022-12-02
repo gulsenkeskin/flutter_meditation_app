@@ -37,6 +37,7 @@ extension MediaQueryExtension on BuildContext {
   double get fem70 => fem * 70;
   double get fem85 => fem * 85;
   double get fem95 => fem * 85;
+  double get fem161 => fem * 161;
   double get fem177 => fem * 177;
   double get fem210 => fem * 210;
 
@@ -47,6 +48,7 @@ extension MediaQueryExtension on BuildContext {
   double get ffem11 => ffem * 11;
   double get ffem12 => ffem * 12;
   double get ffem18 => ffem * 18;
+  double get ffem24 => ffem * 24;
 
   double get titleFontSize => dynamicFFem(16);
   double get titleHeight => dynamicFFem(1.2575) / fem;
