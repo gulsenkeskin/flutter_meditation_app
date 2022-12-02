@@ -4,7 +4,7 @@ import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
-import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem18.dart';
 
 class PlayCard extends StatelessWidget {

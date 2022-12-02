@@ -3,7 +3,7 @@ import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 
 class WelcomeWidget extends StatelessWidget {
   final String welcomeText;

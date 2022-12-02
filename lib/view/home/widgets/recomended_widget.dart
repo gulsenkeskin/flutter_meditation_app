@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
-import 'package:flutter_meditation_app/core/components/text/text_ffem11.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
-import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
-import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
-import 'package:flutter_meditation_app/core/components/text/text_ffem18.dart';
+import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 
 class RecomendedWidget extends StatelessWidget {
   final String text;

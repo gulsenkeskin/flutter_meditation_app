@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem11.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem18.dart';

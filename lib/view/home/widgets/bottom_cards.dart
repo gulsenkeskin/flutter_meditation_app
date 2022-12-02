@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
-import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/models/card_item.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';

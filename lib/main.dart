@@ -7,7 +7,7 @@ import 'package:flutter_meditation_app/product/init/navigation/navigation_route.
 import 'package:flutter_meditation_app/product/init/navigation/navigation_service.dart';
 import 'package:flutter_meditation_app/product/init/notifier/provider_list.dart';
 import 'package:flutter_meditation_app/view/home/home_view.dart';
-import 'package:flutter_meditation_app/widgets/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
