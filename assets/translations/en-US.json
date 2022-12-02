@@ -1,0 +1,41 @@
+{
+    "login": {
+        "welcome": "Login welcome"
+    },
+    "button": {
+        "start": "START",
+        "home": "Home",
+        "sleep": "Sleep",
+        "meditate": "Meditate",
+        "music": "Music"
+    },
+    "gulsen": "Gülsen",
+    "good": "Good",
+    "morning": "Morning",
+    "wish": "We Wish you have a good day",
+    "basics": "Basics",
+    "course": "COURSE",
+    "minute": "3-10 MIN",
+    "relaxion": "Relaxion",
+    "music": "MUSİC",
+    "meditation":"MEDİTATION",
+    "dailyThought": "Daily Thought",
+    "recomendedForYou": "Recomended for you",
+    "focus": "Focus",
+    "happines": "Happines",
+    "slient": "Slient",
+    "moon": "Moon",
+    "happy": "Happy",
+    "ease": "Ease the mind into a restful night's sleep with these deep, ambient tones.",
+    "fovorits": "24.234 Favorits",
+    "listening": "34.234 Listening",
+    "pickANnrrator": "Pick a Nnrrator",
+    "maleVoice": "MALE VOICE",
+    "femaleVoice": "FEMALE VOICE",
+    "focusAttention": "Focus Attention",
+    "bodyScan": "Body Scan",
+    "makingHappiness": "Making Happiness"
+
+
+
+}
