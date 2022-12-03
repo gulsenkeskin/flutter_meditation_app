@@ -22,11 +22,13 @@ extension MediaQueryExtension on BuildContext {
 
   double get fem3 => fem * 3;
   double get fem5 => fem * 5;
+  double get fem8 => fem * 8;
   double get fem9 => fem * 9;
   double get fem10 => fem * 10;
   double get fem11 => fem * 11;
   double get fem12 => fem * 12;
   double get fem15 => fem * 15;
+  double get fem16 => fem * 16;
   double get fem20 => fem * 20;
   double get fem25 => fem * 25;
   double get fem27 => fem * 27;
@@ -34,12 +36,21 @@ extension MediaQueryExtension on BuildContext {
   double get fem30 => fem * 30;
   double get fem32 => fem * 32;
   double get fem35 => fem * 35;
+  double get fem38 => fem * 38;
   double get fem40 => fem * 40;
+  double get fem45 => fem * 45;
   double get fem50 => fem * 50;
+  double get fem61 => fem * 61;
+  double get fem63 => fem * 63;
   double get fem70 => fem * 70;
   double get fem85 => fem * 85;
   double get fem95 => fem * 95;
+  double get fem103 => fem * 103;
+  double get fem115 => fem * 115;
+  double get fem116 => fem * 116;
+  double get fem123 => fem * 123;
   double get fem161 => fem * 161;
+  double get fem168 => fem * 168;
   double get fem177 => fem * 177;
   double get fem210 => fem * 210;
 
@@ -49,8 +60,11 @@ extension MediaQueryExtension on BuildContext {
 
   double get ffem11 => ffem * 11;
   double get ffem12 => ffem * 12;
+  double get ffem16 => ffem * 16;
   double get ffem18 => ffem * 18;
   double get ffem24 => ffem * 24;
+  double get ffem30 => ffem * 30;
+
 
   double get titleFontSize => dynamicFFem(16);
   double get titleHeight => dynamicFFem(1.2575) / fem;

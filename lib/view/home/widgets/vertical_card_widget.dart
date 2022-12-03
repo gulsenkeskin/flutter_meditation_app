@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
+import 'package:flutter_meditation_app/constants/font/font_contants.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
@@ -92,7 +93,7 @@ class VerticalCardBottom extends StatelessWidget {
             margin: EdgeInsets.only(top: context.fem, right: context.fem32),
             child: LocaleText(
               value: bottomText,
-              style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
+              style: SafeGoogleFont(fontHelveticaNeue,
                   fontSize: context.ffem11,
                   fontWeight: minSubTitleWeight,
                   height: context.minSubTitleHeight,
@@ -153,7 +154,7 @@ class VerticalCardCenter extends StatelessWidget {
               )),
           LocaleText(
             value: subTitle,
-            style: SafeGoogleFont(GoogleFontEnum.helveticaNeue.font,
+            style: SafeGoogleFont(fontHelveticaNeue,
                 fontSize: context.dynamicFFem(11),
                 fontWeight: minSubTitleWeight,
                 height: context.minSubTitleHeight,

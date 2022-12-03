@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
+import 'package:flutter_meditation_app/constants/font/font_contants.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
+import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
 class LogoTitle extends StatelessWidget {
   final String logoPath;
@@ -14,23 +16,21 @@ class LogoTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String title1 = "Slient";
-    EdgeInsets margin1 = EdgeInsets.only(
-        top: context.dynamicFem(1), right: context.dynamicFem(8));
+    EdgeInsets margin_top_right = EdgeInsets.only(
+        top: context.fem, right: context.fem8);
 
-    EdgeInsets margin2 = EdgeInsets.only(top: context.dynamicFem(1));
+    EdgeInsets margin_top = EdgeInsets.only(top: context.fem);
 
-    const String title2 = "Moon";
     return Container(
-      margin: EdgeInsets.fromLTRB(context.dynamicFem(103), 0,
-          context.dynamicFem(123), context.dynamicFem(40)),
+      margin: EdgeInsets.fromLTRB(context.fem103, 0,
+         context.fem123, context.fem40),
       width: double.infinity,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          title(context, title1, margin1, titleColor),
+          title(context, LocaleKeys.slient, margin_top_right, titleColor),
           logo(context, logoPath),
-          title(context, title2, margin2, titleColor),
+          title(context, LocaleKeys.moon, margin_top, titleColor),
         ],
       ),
     );
@@ -38,7 +38,7 @@ class LogoTitle extends StatelessWidget {
 
   Container logo(BuildContext context, String logoPath) {
     return Container(
-      margin: EdgeInsets.only(right: context.dynamicFem(10)),
+      margin: EdgeInsets.only(right: context.fem10),
       width: context.fem30,
       height: context.fem30,
       child: logoPath.toImageAsset(height: context.fem30, width: context.fem30),
@@ -52,7 +52,7 @@ class LogoTitle extends StatelessWidget {
       child: LocaleText(
         value: title,
         style: SafeGoogleFont(
-          GoogleFontEnum.airbnbCerealApp.font,
+          fontAirbnbCerealApp,
           fontSize: context.titleFontSize,
           fontWeight: titleWeight,
           height: context.titleHeight,

@@ -3,7 +3,7 @@ import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/models/card_item.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
-import 'package:flutter_meditation_app/view/home/home_constants.dart';
+import 'package:flutter_meditation_app/constants/view_constants/home_constants.dart';
 import 'package:flutter_meditation_app/view/home/widgets/bottom_card.dart';
 
 class BottomCards extends StatelessWidget {

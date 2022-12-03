@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
+import 'package:flutter_meditation_app/constants/font/font_contants.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
@@ -33,7 +34,6 @@ class PlayCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final double subTitleFem = context.dynamicFem(1.5);
 
-    final String font = GoogleFontEnum.helveticaNeue.font;
 
     return Container(
       margin: EdgeInsets.only(right: context.fem20, bottom: context.fem40),
@@ -55,9 +55,9 @@ class PlayCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                titleWidget(context, title, font),
+                titleWidget(context, title, fontHelveticaNeue),
                 subTitleWidget(
-                    context, subTitle, font, subTitleFem, minuteTitle)
+                    context, subTitle, fontHelveticaNeue, subTitleFem, minuteTitle)
               ],
             ),
           ),

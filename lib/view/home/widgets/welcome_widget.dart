@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
+import 'package:flutter_meditation_app/constants/font/font_contants.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
@@ -19,7 +20,7 @@ class WelcomeWidget extends StatelessWidget {
       child: Text(
         "$welcomeText , $userName",
         style: SafeGoogleFont(
-          GoogleFontEnum.helveticaNeue.font,
+          fontHelveticaNeue,
           fontSize: context.dynamicFFem(28),
           fontWeight: titleWeight,
           height: context.welcomeTitleHeight,
