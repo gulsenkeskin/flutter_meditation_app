@@ -18,53 +18,50 @@ extension MediaQueryExtension on BuildContext {
   double get baseWidth => 414;
 
   double get fem => width / baseWidth;
-  double get ffem => fem * 0.97;
+  double get ffem => dynamicFem(0.97);
 
-  double get fem3 => fem * 3;
-  double get fem5 => fem * 5;
-  double get fem8 => fem * 8;
-  double get fem9 => fem * 9;
-  double get fem10 => fem * 10;
-  double get fem11 => fem * 11;
-  double get fem12 => fem * 12;
-  double get fem15 => fem * 15;
-  double get fem16 => fem * 16;
-  double get fem20 => fem * 20;
-  double get fem25 => fem * 25;
-  double get fem27 => fem * 27;
-  double get fem28 => fem * 28;
-  double get fem30 => fem * 30;
-  double get fem32 => fem * 32;
-  double get fem35 => fem * 35;
-  double get fem38 => fem * 38;
-  double get fem40 => fem * 40;
-  double get fem45 => fem * 45;
-  double get fem50 => fem * 50;
-  double get fem61 => fem * 61;
-  double get fem63 => fem * 63;
-  double get fem70 => fem * 70;
-  double get fem85 => fem * 85;
-  double get fem95 => fem * 95;
-  double get fem103 => fem * 103;
-  double get fem115 => fem * 115;
-  double get fem116 => fem * 116;
-  double get fem123 => fem * 123;
-  double get fem161 => fem * 161;
-  double get fem168 => fem * 168;
-  double get fem177 => fem * 177;
-  double get fem210 => fem * 210;
+  double get fem3 => dynamicFem(3);
+  double get fem5 => dynamicFem(5);
+  double get fem8 => dynamicFem(8);
+  double get fem9 => dynamicFem(9);
+  double get fem10 => dynamicFem(10);
+  double get fem11 => dynamicFem(11);
+  double get fem12 => dynamicFem(12);
+  double get fem15 => dynamicFem(15);
+  double get fem16 => dynamicFem(16);
+  double get fem20 => dynamicFem(20);
+  double get fem25 => dynamicFem(25);
+  double get fem27 => dynamicFem(27);
+  double get fem28 => dynamicFem(28);
+  double get fem30 => dynamicFem(30);
+  double get fem32 => dynamicFem(32);
+  double get fem35 => dynamicFem(35);
+  double get fem38 => dynamicFem(38);
+  double get fem40 => dynamicFem(40);
+  double get fem45 => dynamicFem(45);
+  double get fem50 => dynamicFem(50);
+  double get fem61 => dynamicFem(61);
+  double get fem63 => dynamicFem(63);
+  double get fem70 => dynamicFem(70);
+  double get fem85 => dynamicFem(85);
+  double get fem95 => dynamicFem(95);
+  double get fem103 => dynamicFem(103);
+  double get fem115 => dynamicFem(115);
+  double get fem116 => dynamicFem(116);
+  double get fem123 => dynamicFem(123);
+  double get fem161 => dynamicFem(161);
+  double get fem168 => dynamicFem(168);
+  double get fem177 => dynamicFem(177);
+  double get fem210 => dynamicFem(210);
 
+  double get fem428_24 => dynamicFem(428.24);
 
-
-
-
-  double get ffem11 => ffem * 11;
-  double get ffem12 => ffem * 12;
-  double get ffem16 => ffem * 16;
-  double get ffem18 => ffem * 18;
-  double get ffem24 => ffem * 24;
-  double get ffem30 => ffem * 30;
-
+  double get ffem11 => dynamicFFem(11);
+  double get ffem12 => dynamicFFem(12);
+  double get ffem16 => dynamicFFem(16);
+  double get ffem18 => dynamicFFem(18);
+  double get ffem24 => dynamicFFem(24);
+  double get ffem30 => dynamicFFem(30);
 
   double get titleFontSize => dynamicFFem(16);
   double get titleHeight => dynamicFFem(1.2575) / fem;
