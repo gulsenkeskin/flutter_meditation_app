@@ -39,7 +39,7 @@ class SignInView extends StatelessWidget {
                   Positioned(
                       left: 0,
                       right: 0,
-                      child: Container(
+                      child: SizedBox(
                         width: context.fem547_19,
                         height: context.fem428_24,
                         child: Column(
@@ -63,7 +63,7 @@ class SignInView extends StatelessWidget {
                                             width: context.fem204_31,
                                             height: context.fem161_56),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     width: context.fem175_05,
                                     height: context.fem190_77,
                                     child:
@@ -72,7 +72,7 @@ class SignInView extends StatelessWidget {
                                       height: context.fem190_77,
                                     ),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     width: context.fem242_71,
                                     height: context.fem232_66,
                                     child:
