@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
+import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({Key? key}) : super(key: key);
@@ -54,16 +55,25 @@ class SignInView extends StatelessWidget {
                                         right: context.fem103_42),
                                     width: context.fem204_31,
                                     height: context.fem161_56,
-                                    imagePath: signInConstants.topImage3,
+                                    imagePath: signInConstants.topImage2,
                                   ),
                                   ImageAssetWithSize(
                                       imagePath: signInConstants.topImage3,
                                       width: context.fem175_05,
                                       height: context.fem190_77),
-                                  ImageAssetWithSize(
+                                  ClipRect(
+                                    clipBehavior: Clip.hardEdge,
+                                    child:
+                                        signInConstants.topImage4.toImageAsset(
                                       width: context.fem242_71,
                                       height: context.fem232_66,
-                                      imagePath: signInConstants.topImage4)
+                                    ),
+
+                                    /*mageAssetWithSize(
+                                        width: context.fem242_71,
+                                        height: context.fem232_66,
+                                        imagePath: signInConstants.topImage4),*/
+                                  )
                                 ],
                               ),
                             )
