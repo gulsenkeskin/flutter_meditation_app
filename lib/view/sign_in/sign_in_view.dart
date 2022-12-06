@@ -61,19 +61,10 @@ class SignInView extends StatelessWidget {
                                       imagePath: signInConstants.topImage3,
                                       width: context.fem175_05,
                                       height: context.fem190_77),
-                                  ClipRect(
-                                    clipBehavior: Clip.hardEdge,
-                                    child:
-                                        signInConstants.topImage4.toImageAsset(
+                                  ImageAssetWithSize(
                                       width: context.fem242_71,
                                       height: context.fem232_66,
-                                    ),
-
-                                    /*mageAssetWithSize(
-                                        width: context.fem242_71,
-                                        height: context.fem232_66,
-                                        imagePath: signInConstants.topImage4),*/
-                                  )
+                                      imagePath: signInConstants.topImage4),
                                 ],
                               ),
                             )
