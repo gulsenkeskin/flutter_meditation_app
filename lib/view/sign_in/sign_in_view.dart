@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
+import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 
@@ -27,15 +28,11 @@ class SignInView extends StatelessWidget {
                       left: 0,
                       top: context.fem92,
                       child: Align(
-                        child: SizedBox(
-                          width: context.fem254_9,
-                          height: context.fem258_19,
-                          child: signInConstants.topImage1.toImageAsset(
-                            width: context.fem254_9,
-                            height: context.fem258_19,
-                          ),
-                        ),
-                      )),
+                          child: ImageAssetWithSize(
+                        width: context.fem254_9,
+                        height: context.fem258_19,
+                        imagePath: signInConstants.topImage1,
+                      ))),
                   Positioned(
                       left: 0,
                       right: 0,
@@ -53,34 +50,21 @@ class SignInView extends StatelessWidget {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  ImageAssetWithSize(
                                     margin: EdgeInsets.only(
                                         right: context.fem103_42),
                                     width: context.fem204_31,
                                     height: context.fem161_56,
-                                    child: signInConstants.topImage3
-                                        .toImageAsset(
-                                            width: context.fem204_31,
-                                            height: context.fem161_56),
+                                    imagePath: signInConstants.topImage3,
                                   ),
-                                  SizedBox(
-                                    width: context.fem175_05,
-                                    height: context.fem190_77,
-                                    child:
-                                        signInConstants.topImage3.toImageAsset(
+                                  ImageAssetWithSize(
+                                      imagePath: signInConstants.topImage3,
                                       width: context.fem175_05,
-                                      height: context.fem190_77,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: context.fem242_71,
-                                    height: context.fem232_66,
-                                    child:
-                                        signInConstants.topImage4.toImageAsset(
+                                      height: context.fem190_77),
+                                  ImageAssetWithSize(
                                       width: context.fem242_71,
                                       height: context.fem232_66,
-                                    ),
-                                  )
+                                      imagePath: signInConstants.topImage4)
                                 ],
                               ),
                             )
