@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meditation_app/constants/enums/google_font_enum.dart';
 import 'package:flutter_meditation_app/constants/font/font_contants.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
+import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
@@ -34,7 +34,6 @@ class PlayCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final double subTitleFem = context.dynamicFem(1.5);
 
-
     return Container(
       margin: EdgeInsets.only(right: context.fem20, bottom: context.fem40),
       padding: EdgeInsets.symmetric(
@@ -56,8 +55,8 @@ class PlayCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 titleWidget(context, title, fontHelveticaNeue),
-                subTitleWidget(
-                    context, subTitle, fontHelveticaNeue, subTitleFem, minuteTitle)
+                subTitleWidget(context, subTitle, fontHelveticaNeue,
+                    subTitleFem, minuteTitle)
               ],
             ),
           ),
@@ -116,13 +115,12 @@ class PlayCard extends StatelessWidget {
     );
   }
 
-  Container playButton(BuildContext context, String playImgPath) {
-    return Container(
+  ImageAssetWithSize playButton(BuildContext context, String playImgPath) {
+    return ImageAssetWithSize(
       margin: EdgeInsets.only(top: context.fem),
       width: context.fem40,
       height: context.fem40,
-      child:
-          playImgPath.toImageAsset(width: context.fem40, height: context.fem40),
+      imagePath: playImgPath,
     );
   }
 

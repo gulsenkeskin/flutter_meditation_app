@@ -6,10 +6,8 @@ import 'package:flutter_meditation_app/product/init/localization/localization_ma
 import 'package:flutter_meditation_app/product/init/navigation/navigation_route.dart';
 import 'package:flutter_meditation_app/product/init/navigation/navigation_service.dart';
 import 'package:flutter_meditation_app/product/init/notifier/provider_list.dart';
-import 'package:flutter_meditation_app/view/home/home_view.dart';
 import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 import 'package:flutter_meditation_app/view/sign_in/sign_in_view.dart';
-import 'package:flutter_meditation_app/view/sign_up_sign_in/sign_up_and_sign_in_view.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {

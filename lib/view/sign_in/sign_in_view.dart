@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({Key? key}) : super(key: key);

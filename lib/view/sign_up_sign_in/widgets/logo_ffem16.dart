@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_up_and_sign_in_constants.dart';
+import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/core/components/text/text_airbnb_ffem16.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
 class LogoFfem16 extends StatelessWidget {
@@ -30,13 +30,11 @@ class LogoFfem16 extends StatelessWidget {
               left: 0,
               right: 0,
               child: Align(
-                child: SizedBox(
-                  width: fem423,
-                  height: fem504,
-                  child: signUpAndSignInConstants.framePath
-                      .toImageAsset(width: fem423, height: fem504),
-                ),
-              )),
+                  child: ImageAssetWithSize(
+                width: fem423,
+                height: fem504,
+                imagePath: signUpAndSignInConstants.framePath,
+              ))),
           Positioned(
               left: context.fem123,
               top: context.fem50,
@@ -53,13 +51,11 @@ class LogoFfem16 extends StatelessWidget {
                         text: LocaleKeys.slient,
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(right: context.fem10),
-                      width: context.fem30,
-                      height: context.fem30,
-                      child: signUpAndSignInConstants.logoPath.toImageAsset(
-                          width: context.fem30, height: context.fem30),
-                    ),
+                    ImageAssetWithSize(
+                        margin: EdgeInsets.only(right: context.fem10),
+                        width: context.fem30,
+                        height: context.fem30,
+                        imagePath: signUpAndSignInConstants.logoPath),
                     Container(
                       margin: EdgeInsets.only(top: context.fem),
                       child: const TextAirbnbFfem16(
@@ -73,11 +69,10 @@ class LogoFfem16 extends StatelessWidget {
               left: fem40,
               top: fem160,
               child: Align(
-                child: SizedBox(
+                child: ImageAssetWithSize(
                   width: fem332_22,
                   height: fem242_69,
-                  child: signUpAndSignInConstants.imagePath
-                      .toImageAsset(width: fem332_22, height: fem242_69),
+                  imagePath: signUpAndSignInConstants.imagePath,
                 ),
               )),
         ],

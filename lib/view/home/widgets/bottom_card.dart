@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
+import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem11.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem18.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
 class BottomCard extends StatelessWidget {
@@ -37,12 +37,8 @@ class BottomCard extends StatelessWidget {
                 color: cardColor,
                 borderRadius: BorderRadius.circular(context.fem10)),
             child: Center(
-              child: SizedBox(
-                width: fem162,
-                height: fem113_5,
-                child: imagePath.toImageAsset(width: fem162, height: fem113_5),
-              ),
-            ),
+                child: ImageAssetWithSize(
+                    width: fem162, height: fem113_5, imagePath: imagePath)),
           ),
           Container(
             margin: EdgeInsets.only(left: context.fem3, bottom: context.fem5),
