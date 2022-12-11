@@ -48,6 +48,6 @@ class MyApp extends StatelessWidget {
         ),
         onGenerateRoute: NavigationRoute.instance.generateRoute,
         navigatorKey: NavigationService.instance.navigatorKey,
-        home: const SignInView());
+        home:const SignInView());
   }
 }
