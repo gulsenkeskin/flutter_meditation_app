@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
+import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
+import 'package:flutter_meditation_app/core/components/text/text_ffem14.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
+import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({Key? key}) : super(key: key);
@@ -77,32 +80,37 @@ class SignInView extends StatelessWidget {
                           )),
                       //TODO BUTTONS
                       Positioned(
-                          left: context.fem20,
-                          top: context.fem204_31,
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(
-                                context.fem34_84,
-                                context.fem19_47,
-                                context.fem101_35,
-                                context.fem19_47),
-                            width: context.fem374,
-                            height: context.fem63,
-                            decoration: BoxDecoration(
-                                color: violetsAreBlue,
-                                borderRadius:
-                                    BorderRadius.circular(context.fem38)),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                ImageAssetWithSize(
-                                    margin: EdgeInsets.only(
-                                        right: context.fem45_78),
-                                    width: context.fem12,
-                                    height: context.fem24,
-                                    imagePath: signInConstants.facebookIcon)
-                              ],
-                            ),
-                          ))
+                        left: context.fem20,
+                        top: context.fem204_31,
+                        child: Container(
+                          padding: EdgeInsets.fromLTRB(
+                              context.fem34_84,
+                              context.fem19_47,
+                              context.fem101_35,
+                              context.fem19_47),
+                          width: context.fem374,
+                          height: context.fem63,
+                          decoration: BoxDecoration(
+                              color: violetsAreBlue,
+                              borderRadius:
+                                  BorderRadius.circular(context.fem38)),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              ImageAssetWithSize(
+                                  margin: EdgeInsets.only(right: context.fem45),
+                                  width: context.fem12,
+                                  height: context.fem24,
+                                  imagePath: signInConstants.facebookIcon),
+                              Container(
+                                margin: EdgeInsets.only(top: context.fem2),
+                                child: const TextFfem14(
+                                    text: LocaleKeys.continueWithFaceBook),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 )

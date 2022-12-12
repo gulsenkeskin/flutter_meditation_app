@@ -39,5 +39,12 @@
     "thousandOf": "Thousand of people are usign silent moon \nfor smalls meditation",
     "signUp": "SIGN UP",
     "alreadyHaveAccount": "ALREADY HAVE AN ACCOUNT?",
-    "logIn": "LOG IN"
+    "logIn": "LOG IN",
+    "continueWithFaceBook": "CONTINUE WITH FACEBOOK",
+    "continueWithGoogle": "CONTINUE WITH GOOGLE",
+    "orLogInWithEmail": "OR LOG IN WITH EMAIL",
+    "emailAddress": "Email address",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "alreadyHaveAnAccount": "ALREADY HAVE AN ACCOUNT?"
 }

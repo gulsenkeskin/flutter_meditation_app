@@ -1,6 +1,6 @@
-// ignore_for_file: constant_identifier_names
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-abstract class LocaleKeys {
+abstract class  LocaleKeys {
   static const login_welcome = 'login.welcome';
   static const login = 'login';
   static const button_start = 'button.start';
@@ -40,4 +40,12 @@ abstract class LocaleKeys {
   static const signUp = 'signUp';
   static const alreadyHaveAccount = 'alreadyHaveAccount';
   static const logIn = 'logIn';
+  static const continueWithFaceBook = 'continueWithFaceBook';
+  static const continueWithGoogle = 'continueWithGoogle';
+  static const orLogInWithEmail = 'orLogInWithEmail';
+  static const emailAddress = 'emailAddress';
+  static const password = 'password';
+  static const forgotPassword = 'forgotPassword';
+  static const alreadyHaveAnAccount = 'alreadyHaveAnAccount';
+
 }
