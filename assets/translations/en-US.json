@@ -46,5 +46,6 @@
     "emailAddress": "Email address",
     "password": "Password",
     "forgotPassword": "Forgot Password?",
-    "alreadyHaveAnAccount": "ALREADY HAVE AN ACCOUNT?"
+    "alreadyHaveAnAccount": "ALREADY HAVE AN ACCOUNT?",
+    "welcomeBack": "Welcome Back!"
 }
