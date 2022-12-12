@@ -13,37 +13,41 @@ class SignUpAndSignInView extends StatelessWidget {
   Widget build(BuildContext context) {
     final double fem78 = context.dynamicFem(78);
 
-    return Material(
-      type: MaterialType.transparency,
-      child: Container(
-        decoration: const BoxDecoration(color: Colors.white),
-        child: ListView(
-          children: [
-            const LogoFfem16(),
-            Container(
-              padding: EdgeInsets.fromLTRB(
-                  context.fem20, context.fem30, context.fem20, context.fem9),
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const CenterText(),
-                  Container(
-                    margin: EdgeInsets.only(bottom: fem78),
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(context.fem38),
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          decoration: const BoxDecoration(color: Colors.white),
+          child: Column(
+            children: [
+              const LogoFfem16(),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.fromLTRB(
+                    context.fem20, context.fem30, context.fem20, context.fem9),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const CenterText(),
+                    Container(
+                      margin: EdgeInsets.only(bottom: fem78),
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(context.fem38),
+                      ),
+                      child: Column(
+                        children: const [
+                          SignUpButton(),
+                          AlreadyHaveAccountText()
+                        ],
+                      ),
                     ),
-
-                    child: Column(
-                      children: const [SignUpButton(), AlreadyHaveAccountText()],
-                    ),
-                  ),
-                  const BottomDivider(),
-                ],
+                    const BottomDivider(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

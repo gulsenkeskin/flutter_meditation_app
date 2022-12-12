@@ -8,6 +8,7 @@ import 'package:flutter_meditation_app/product/init/navigation/navigation_servic
 import 'package:flutter_meditation_app/product/init/notifier/provider_list.dart';
 import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_behavior.dart';
 import 'package:flutter_meditation_app/view/sign_in/sign_in_view.dart';
+import 'package:flutter_meditation_app/view/sign_up_sign_in/sign_up_and_sign_in_view.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -48,6 +49,6 @@ class MyApp extends StatelessWidget {
         ),
         onGenerateRoute: NavigationRoute.instance.generateRoute,
         navigatorKey: NavigationService.instance.navigatorKey,
-        home:const SignInView());
+        home:const SignUpAndSignInView());
   }
 }

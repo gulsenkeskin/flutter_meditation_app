@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
-import 'package:flutter_meditation_app/core/components/text/locale_text.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem14.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem28.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
-import 'package:flutter_meditation_app/extensions/image_path_extension.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
 class SignInView extends StatelessWidget {
@@ -20,7 +18,7 @@ class SignInView extends StatelessWidget {
 
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: Container(
             width: double.infinity,
@@ -37,12 +35,11 @@ class SignInView extends StatelessWidget {
                       Positioned(
                           left: 0,
                           top: context.fem92,
-                          child: Align(
-                              child: ImageAssetWithSize(
+                          child: ImageAssetWithSize(
                             width: context.fem254_9,
                             height: context.fem258_19,
                             imagePath: signInConstants.topImage1,
-                          ))),
+                          )),
                       Positioned(
                           left: 0,
                           top: 0,
@@ -119,13 +116,11 @@ class SignInView extends StatelessWidget {
                       Positioned(
                           left: context.fem103,
                           top: context.fem133,
-                          child: Align(
-                            child: SizedBox(
-                              width: fem187,
-                              height: context.fem38,
-                              child: const TextFfem28(
-                                text: LocaleKeys.welcomeBack,
-                              ),
+                          child: SizedBox(
+                            width: fem187,
+                            height: context.fem38,
+                            child: const TextFfem28(
+                              text: LocaleKeys.welcomeBack,
                             ),
                           ))
                     ],
