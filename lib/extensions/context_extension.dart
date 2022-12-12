@@ -52,6 +52,7 @@ extension MediaQueryExtension on BuildContext {
   double get fem115 => dynamicFem(115);
   double get fem116 => dynamicFem(116);
   double get fem123 => dynamicFem(123);
+  double get fem133 => dynamicFem(133);
   double get fem161 => dynamicFem(161);
   double get fem168 => dynamicFem(168);
   double get fem177 => dynamicFem(177);
@@ -64,7 +65,6 @@ extension MediaQueryExtension on BuildContext {
   double get fem547_19 => dynamicFem(547.19);
   double get fem4_8 => dynamicFem(4.8);
   double get fem64_41 => dynamicFem(64.41);
-  double get fem103_42 => dynamicFem(103.42);
   double get fem204_31 => dynamicFem(204.31);
   double get fem161_56 => dynamicFem(161.56);
   double get fem175_05 => dynamicFem(175.05);
@@ -74,6 +74,8 @@ extension MediaQueryExtension on BuildContext {
   double get fem34_84 => dynamicFem(34.84);
   double get fem19_47 => dynamicFem(19.47);
   double get fem101_35 => dynamicFem(101.35);
+
+
   // double get fem=>dynamicFem();
   // double get fem=>dynamicFem();
   // double get fem=>dynamicFem();
@@ -97,6 +99,7 @@ extension MediaQueryExtension on BuildContext {
   double get ffem16 => dynamicFFem(16);
   double get ffem18 => dynamicFFem(18);
   double get ffem24 => dynamicFFem(24);
+  double get ffem28 => dynamicFFem(28);
   double get ffem30 => dynamicFFem(30);
 
   double get titleFontSize => dynamicFFem(16);
