@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
 import 'package:flutter_meditation_app/constants/font/font_color.dart';
+import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem14.dart';
@@ -84,11 +85,8 @@ class SignInView extends StatelessWidget {
                         left: context.fem20,
                         top: context.fem204,
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(
-                              context.fem35,
-                              context.fem19,
-                              context.fem101,
-                              context.fem19),
+                          padding: EdgeInsets.fromLTRB(context.fem35,
+                              context.fem19, context.fem101, context.fem19),
                           width: context.fem374,
                           height: context.fem63,
                           decoration: BoxDecoration(
@@ -156,12 +154,23 @@ class SignInView extends StatelessWidget {
                       Positioned(
                           left: context.fem20,
                           top: context.fem50,
-                          child:  ImageAssetWithSize(
+                          child: ImageAssetWithSize(
                               width: context.fem55,
                               height: context.fem55,
                               imagePath: signInConstants.backIcon))
                     ],
                   ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: context.fem35),
+                  child: const TextFfem14(
+                    text: LocaleKeys.orLogInWithEmail,
+                    fontWeight: titleWeight,
+                    fontColor: greatFalls,
+                  ),
+                ),
+                Container(
+
                 )
               ],
             ),

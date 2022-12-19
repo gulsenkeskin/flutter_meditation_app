@@ -9,22 +9,26 @@ import 'package:flutter_meditation_app/core/components/scroll/custom_scroll_beha
 class TextFfem14 extends StatelessWidget {
   final String text;
   final Color? fontColor;
-  const TextFfem14({Key? key, required this.text, this.fontColor})
+  final FontWeight? fontWeight;
+
+  const TextFfem14(
+      {Key? key, required this.text, this.fontColor, this.fontWeight})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return LocaleText(
       value: text,
-      style: textFfem14Style(context, fontColor),
+      style: textFfem14Style(context, fontColor, fontWeight: fontWeight),
     );
   }
 }
 
-TextStyle textFfem14Style(BuildContext context, Color? fontColor) {
+TextStyle textFfem14Style(BuildContext context, Color? fontColor,
+    {FontWeight? fontWeight}) {
   return SafeGoogleFont(fontHelveticaNeue,
       fontSize: context.dynamicFFem(14),
-      fontWeight: minSubTitleWeight,
+      fontWeight: fontWeight ?? minSubTitleWeight,
       height: context.welcomeTitleHeight,
       color: fontColor ?? cloudBreak,
       letterSpacing: context.dynamicFem(0.7));
