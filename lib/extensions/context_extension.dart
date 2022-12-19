@@ -30,11 +30,14 @@ extension MediaQueryExtension on BuildContext {
   double get fem12 => dynamicFem(12);
   double get fem15 => dynamicFem(15);
   double get fem16 => dynamicFem(16);
+  double get fem19 => dynamicFem(19);
   double get fem20 => dynamicFem(20);
+  double get fem23 => dynamicFem(23);
   double get fem24 => dynamicFem(24);
   double get fem25 => dynamicFem(25);
   double get fem27 => dynamicFem(27);
   double get fem28 => dynamicFem(28);
+  double get fem29 => dynamicFem(29);
   double get fem30 => dynamicFem(30);
   double get fem32 => dynamicFem(32);
   double get fem35 => dynamicFem(35);
@@ -51,6 +54,7 @@ extension MediaQueryExtension on BuildContext {
   double get fem103 => dynamicFem(103);
   double get fem115 => dynamicFem(115);
   double get fem116 => dynamicFem(116);
+  double get fem117 => dynamicFem(117);
   double get fem123 => dynamicFem(123);
   double get fem133 => dynamicFem(133);
   double get fem161 => dynamicFem(161);
@@ -58,6 +62,7 @@ extension MediaQueryExtension on BuildContext {
   double get fem177 => dynamicFem(177);
   double get fem210 => dynamicFem(210);
   double get fem374 => dynamicFem(374);
+  double get fem287=>dynamicFem(287);
 
   double get fem428_24 => dynamicFem(428.24);
   double get fem254_9 => dynamicFem(254.9);

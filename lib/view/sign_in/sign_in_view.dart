@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/color_constants.dart';
+import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem14.dart';
@@ -121,6 +122,35 @@ class SignInView extends StatelessWidget {
                             height: context.fem38,
                             child: const TextFfem28(
                               text: LocaleKeys.welcomeBack,
+                            ),
+                          )),
+                      Positioned(
+                          left: context.fem20,
+                          top: context.fem287,
+                          child: Container(
+                            padding: EdgeInsets.fromLTRB(context.fem29,
+                                context.fem19, context.fem117, context.fem19),
+                            width: context.fem374,
+                            height: context.fem63,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: lightGray),
+                                borderRadius:
+                                    BorderRadius.circular(context.fem38)),
+                            child: Row(
+                              children: [
+                                ImageAssetWithSize(
+                                    margin:
+                                        EdgeInsets.only(right: context.fem40),
+                                    width: context.fem23,
+                                    height: context.fem24,
+                                    imagePath: signInConstants.googleIcon),
+                                Container(
+                                    margin: EdgeInsets.only(top: context.fem2),
+                                    child: const TextFfem14(
+                                      text: LocaleKeys.continueWithGoogle,
+                                      fontColor: titleColorDark,
+                                    ))
+                              ],
                             ),
                           ))
                     ],
