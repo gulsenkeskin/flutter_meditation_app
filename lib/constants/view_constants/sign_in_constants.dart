@@ -13,5 +13,6 @@ class SignInConstants {
   final String topImage4 ="vector-U4i";
   final String facebookIcon ="vector-K4N";
   final String googleIcon ="group-6795-iUS";
+  final String backIcon="group-6801";
 
 }

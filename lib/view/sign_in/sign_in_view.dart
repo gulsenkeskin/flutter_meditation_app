@@ -152,7 +152,14 @@ class SignInView extends StatelessWidget {
                                     ))
                               ],
                             ),
-                          ))
+                          )),
+                      Positioned(
+                          left: context.fem20,
+                          top: context.fem50,
+                          child:  ImageAssetWithSize(
+                              width: context.fem55,
+                              height: context.fem55,
+                              imagePath: signInConstants.backIcon))
                     ],
                   ),
                 )
