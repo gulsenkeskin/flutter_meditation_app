@@ -29,7 +29,7 @@ class SignInView extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(bottom: context.fem40),
                   width: double.infinity,
-                  height: context.fem428_24,
+                  height: context.fem428,
                   child: Stack(
                     children: [
                       //TODO TOP IMAGES
@@ -37,23 +37,23 @@ class SignInView extends StatelessWidget {
                           left: 0,
                           top: context.fem92,
                           child: ImageAssetWithSize(
-                            width: context.fem254_9,
-                            height: context.fem258_19,
+                            width: context.fem254,
+                            height: context.fem258,
                             imagePath: signInConstants.topImage1,
                           )),
                       Positioned(
                           left: 0,
                           top: 0,
                           child: SizedBox(
-                            width: context.fem547_19,
-                            height: context.fem428_24,
+                            width: context.fem547,
+                            height: context.fem429,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Container(
                                   margin: EdgeInsets.only(
-                                      right: context.fem64_41,
-                                      bottom: context.fem4_8),
+                                      right: context.fem64,
+                                      bottom: context.fem5),
                                   width: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -61,20 +61,20 @@ class SignInView extends StatelessWidget {
                                       ImageAssetWithSize(
                                         margin: EdgeInsets.only(
                                             right: context.fem103),
-                                        width: context.fem204_31,
-                                        height: context.fem161_56,
+                                        width: context.fem204,
+                                        height: context.fem162,
                                         imagePath: signInConstants.topImage2,
                                       ),
                                       ImageAssetWithSize(
                                           imagePath: signInConstants.topImage3,
-                                          width: context.fem175_05,
-                                          height: context.fem190_77),
+                                          width: context.fem175,
+                                          height: context.fem191),
                                     ],
                                   ),
                                 ),
                                 ImageAssetWithSize(
-                                    width: context.fem242_71,
-                                    height: context.fem232_66,
+                                    width: context.fem243,
+                                    height: context.fem233,
                                     imagePath: signInConstants.topImage4),
                               ],
                             ),
@@ -82,13 +82,13 @@ class SignInView extends StatelessWidget {
                       //TODO BUTTONS
                       Positioned(
                         left: context.fem20,
-                        top: context.fem204_31,
+                        top: context.fem204,
                         child: Container(
                           padding: EdgeInsets.fromLTRB(
-                              context.fem34_84,
-                              context.fem19_47,
-                              context.fem101_35,
-                              context.fem19_47),
+                              context.fem35,
+                              context.fem19,
+                              context.fem101,
+                              context.fem19),
                           width: context.fem374,
                           height: context.fem63,
                           decoration: BoxDecoration(
