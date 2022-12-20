@@ -4,8 +4,12 @@ import 'package:flutter_meditation_app/constants/font/font_color.dart';
 import 'package:flutter_meditation_app/constants/font/font_weight.dart';
 import 'package:flutter_meditation_app/constants/view_constants/sign_in_constants.dart';
 import 'package:flutter_meditation_app/core/components/image/image_asset_with_size.dart';
+import 'package:flutter_meditation_app/core/components/input/text_input_form.dart';
+import 'package:flutter_meditation_app/core/components/text/text_airbnb_ffem16.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem14.dart';
+import 'package:flutter_meditation_app/core/components/text/text_ffem16.dart';
 import 'package:flutter_meditation_app/core/components/text/text_ffem28.dart';
+import 'package:flutter_meditation_app/core/extensions/string_extensions.dart';
 import 'package:flutter_meditation_app/extensions/context_extension.dart';
 import 'package:flutter_meditation_app/product/init/localization/locale_keys.g.dart';
 
@@ -170,7 +174,30 @@ class SignInView extends StatelessWidget {
                   ),
                 ),
                 Container(
-
+                  width: double.infinity,
+                  padding: EdgeInsets.fromLTRB(
+                    context.fem20,
+                    context.fem38,
+                    context.fem20,
+                    context.fem9,
+                  ),
+                  child: Column(
+                    children: [
+                      TextInputForm(
+                        hintText: LocaleKeys.emailAddress.locale,
+                      )
+                      /* Container(
+                        margin: EdgeInsets.only(bottom: context.fem20),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: context.fem20, vertical: context.fem23),
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: alpineGoat,
+                            borderRadius: BorderRadius.circular(context.fem15)),
+                        child: const TextFfem16(text: LocaleKeys.emailAddress),
+                      )*/
+                    ],
+                  ),
                 )
               ],
             ),
