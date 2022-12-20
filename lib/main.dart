@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_meditation_app/constants/app/app_constants.dart';
 import 'package:flutter_meditation_app/constants/project_items.dart';
+import 'package:flutter_meditation_app/core/components/input/input_theme.dart';
 import 'package:flutter_meditation_app/product/init/localization/localization_manager.dart';
 import 'package:flutter_meditation_app/product/init/navigation/navigation_route.dart';
 import 'package:flutter_meditation_app/product/init/navigation/navigation_service.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         locale: context.locale,
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          inputDecorationTheme: CustomInputTheme().theme(),
         ),
         onGenerateRoute: NavigationRoute.instance.generateRoute,
         navigatorKey: NavigationService.instance.navigatorKey,
